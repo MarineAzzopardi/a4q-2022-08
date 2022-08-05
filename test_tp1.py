@@ -11,7 +11,7 @@ from HomePage import HomePage
 from ProductCategoryPage import ProductCategoryPage
 
 
-def _open_chrome():
+def test_open_chrome():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://www.amazon.fr")
@@ -56,7 +56,7 @@ def _open_chrome():
     driver.quit()
 
 #CORRECTION DE SIMON
-def test_css_correction():
+def _css_correction():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://www.carrefour.fr/")
@@ -198,7 +198,7 @@ def openProducts2(driver, index):
         print("Index value is out of range. Should be between 0 and 59")
 
 
-def _carrefour():
+def carrefour():
 
     # Open browser and go to Web page
     driver = webdriver.Chrome()
