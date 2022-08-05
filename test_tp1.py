@@ -11,7 +11,7 @@ from HomePage import HomePage
 from ProductCategoryPage import ProductCategoryPage
 
 
-def test_open_chrome():
+def _open_chrome():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://www.amazon.fr")
@@ -20,7 +20,7 @@ def test_open_chrome():
     driver.quit()
 
 #excercice Carrefour CSS selector
-def test_open_chrome():
+def _open_chrome():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://www.carrefour.fr")
@@ -86,7 +86,7 @@ def test_css_correction():
     driver.quit()
 
 
-def test_open_chrome():
+def _open_chrome():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://www.amazon.fr")
@@ -101,7 +101,7 @@ def test_open_chrome():
     ajout_panier.click()
     driver.quit()
 
-def test_css_correction():
+def _css_correction():
     driver = webdriver.Chrome()
 
     driver.maximize_window()
@@ -136,7 +136,7 @@ def test_css_correction():
     driver.quit()
 
 
-def test_navigation_menu():
+def _navigation_menu():
     driver = webdriver.Chrome()
     driver.maximize_window()
 
@@ -198,7 +198,7 @@ def openProducts2(driver, index):
         print("Index value is out of range. Should be between 0 and 59")
 
 
-def test_carrefour():
+def _carrefour():
 
     # Open browser and go to Web page
     driver = webdriver.Chrome()
@@ -266,7 +266,7 @@ def test_carrefour():
 
 #TP_Page_Object
 
-def test_page_object():
+def _page_object():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://www.carrefour.fr")
